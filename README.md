@@ -2,6 +2,10 @@
 
 An xml pretty printer.
 
+## Installation
+
+    gem install xmlpretty
+
 ## Usage
 
 Just pipe your xml into xmlpretty
