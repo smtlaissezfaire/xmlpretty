@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'rexml/document'
+
+DEFAULT_INDENT_LEVEL = 2
+
+indent_level = ARGV[0] ? ARGV[0].to_i : DEFAULT_INDENT_LEVEL
+
+doc = REXML::Document.new($stdin, { :raw => :all })
+doc.write($stdout, indent_level)
+puts ""
